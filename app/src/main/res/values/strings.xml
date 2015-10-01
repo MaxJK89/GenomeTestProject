@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GenomeTestProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="location_service_name">LocationService</string>
+    <string name="facebook_app_id">396671707189537</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="maps_api_key">AIzaSyCFgB5AOIbF3TOyrb13h0y48f9c_5oIJ3M</string>
+    <string name="server_map_api_key">AIzaSyCya8EFIopPo7l3bNN2I42X7_kdRCA1lRY</string>
+</resources>
