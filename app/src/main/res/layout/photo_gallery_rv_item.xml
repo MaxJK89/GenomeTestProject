@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/photo_gallery_image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/one"
+                app:siBorderColor="#D7CCC8"
+                app:siBorderWidth="3dp"
+                app:siRadius="3dp"
+                app:siSquare="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

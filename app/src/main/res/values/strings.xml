@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">GenomeTestProject</string>
+    <string name="app_name">Around Me Genome</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_power">Power</string>
+    <string name="title_activity_login">Login</string>
     <string name="location_service_name">LocationService</string>
     <string name="facebook_app_id">396671707189537</string>
 
@@ -9,5 +10,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="maps_api_key">AIzaSyCFgB5AOIbF3TOyrb13h0y48f9c_5oIJ3M</string>
-    <string name="server_map_api_key">AIzaSyCya8EFIopPo7l3bNN2I42X7_kdRCA1lRY</string>
+    <string name="server_map_api_key">AIzaSyB9wM1tT4wr6_kYQfBsUrxIvWOh0kALX6E</string>
+    <string name="title_activity_details">Details</string>
+    <string name="api_browser_key">AIzaSyDNeU1c99SGxOzpcg1VOMeQB1C8r5ARhSE</string>
+    <string name="hop_title">HOURS OF OPERATION</string>
+
 </resources>

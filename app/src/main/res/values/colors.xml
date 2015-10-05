@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="primarytext">#212121</color>
+    <color name="fbutton_color_concrete">#95a5a6</color>
+
+    <color name="ripple_color">#40c4ff</color>
+    <color name="button_primary">#3f51b5</color>
+    <color name="primary_dark">#455A64</color>
+    <color name="toolbar_text">#8f000000</color>
+    <color name="close_bg_normal">#fcfcfc</color>
+
 </resources>

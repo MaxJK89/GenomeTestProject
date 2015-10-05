@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/days_of_week_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Monday 940-09\nFirday"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/closeMapRl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/days_of_week_open"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/close_selector">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3d1d1d1" />
+
+        <TextView
+            android:id="@+id/closeTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CLOSE"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

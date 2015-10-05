@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/topImageGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="45dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_gallery_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="#83bbdefb"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/noPhotosToShowTx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="NO PHOTOS TO SHOW"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--&lt;!&ndash;<fragment xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+    <!--&lt;!&ndash;xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/detailedMap"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:name="com.google.android.gms.maps.SupportMapFragment"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;tools:context=".DetailsActivity" />&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topImageGallery">
+
+        <RelativeLayout
+            android:id="@+id/full_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:visibility="visible">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/hop_hours_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/hours_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:elevation="3dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/opHrTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="OPENING HOURS"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hop_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/opHrTx"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Open all day"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_details_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hop_hours_card"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="2dp">
+
+                <RelativeLayout
+                    android:id="@+id/topLayerDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/place_name_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        android:scrollHorizontally="true"
+                        android:text="G"
+                        android:textSize="24sp" />
+
+
+                    <TextView
+                        android:id="@+id/place_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place_name_tx"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="13dp"
+                        android:alpha=".5"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        android:scrollHorizontally="true"
+                        android:text="vbxcgfdgfd"
+                        android:textSize="20sp" />
+
+
+                    <TextView
+                        android:id="@+id/place_website_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place_address"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:alpha=".7"
+                        android:autoLink="web"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="3"
+                        android:scrollHorizontally="true"
+                        android:text="www.google.com"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/place_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place_website_address"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:alpha=".7"
+                        android:autoLink="all"
+                        android:gravity="center"
+                        android:text="(620)259-7342"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/viewOnMapTx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/place_phone_number"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="View on map"
+                        android:textColor="#b04fc3f7"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_details_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_details_card"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp"
+                app:cardPreventCornerOverlap="false"
+                app:contentPadding="2dp"></android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

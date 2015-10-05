@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gplus_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:contentPadding="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/gplus_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_forward"
+                app:siBorderColor="#e2dada"
+                app:siBorderWidth="2dp" />
+
+            <TextView
+                android:id="@+id/gplus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gplus_image"
+                android:text="Marte Woxen Burum"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gplus_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gplus_name"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/gplus_image"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:scrollHorizontally="true"
+                android:text="This food really sucked"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/starRatingTx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:text="5 STARS"
+                android:textColor="#E65100" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

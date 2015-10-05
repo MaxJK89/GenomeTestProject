@@ -3,7 +3,6 @@ package quant.cann.genometestproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -40,8 +39,6 @@ public class LoginActivity extends AppCompatActivity {
     private void checkIfLoggedIn(AccessToken accessToken) {
         if (accessToken != null) {
             // already logged in
-            Toast.makeText(getApplicationContext(), "ALREADY LOGGED IN", Toast.LENGTH_SHORT).show();
-
             Intent i = new Intent(LoginActivity.this, HomeActivity.class);
             startActivity(i);
         }
@@ -53,7 +50,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onSuccess(LoginResult loginResult) {
 
-                Toast.makeText(getApplicationContext(), "YOUR LOGGIN IN!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                startActivity(i);
             }
 
             @Override
@@ -78,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+
     }
 
 }
